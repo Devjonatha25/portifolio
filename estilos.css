@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+ 
+}
+
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display:flex ;
+    flex-wrap: wrap;
+    height:20px;
+}
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom:1px solid #f3f5f7;
+    position: fixed;
+    width: 100%;
+   
+   
+      
+}
+.logo{
+    color: #16507b;
+    cursor: pointer;
+    height:1px;
+
+}
+.logo h2{
+    font-size: 22px;
+}
+.menuum{
+    width:90%;
+    text-align: right;
+    display: inline-block;
+    
+    
+
+}
+.menuum a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: right;
+    margin-right:50px
+    
+}
+.menuum a:hover{
+    color: #58a7e4;
+}
+.menuum .btn-menu{
+    background-color: #4294d3;
+    display:inline-block;
+    padding: 6px 10px;
+    border-radius:8px;
+    color:white;
+}
+.menuum .btn-menu:hover{
+    background-color: #134168;
+    color: white;
+    
+}
+section .main{
+    background-image: url('midias/fundo.jpg') ;
+    padding: 73px 0 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main_ctn{
+    width:90%;
+    margin: 60px;
+    text-align: center;
+}
+.main_ctn h2{
+    color: #082841;
+    font-size: 40px;
+
+}
+.main_ctn p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+.main_ctn button{
+    background-color:#4294d3;
+    display:inline-block;
+   padding: 8px 30px;
+   border-radius:8px;
+   color:white;
+   font-size:22px;
+   border: 0;
+   cursor: pointer;
+}
+.diferenciais{
+    display: flex;
+    margin: 10px 7px 10px 0px;
+    padding: 0;
+     
+}
+
+.diferente{
+    background-color: rgb(49, 129, 233);
+   width: 100%;
+   margin-right: 1%;
+   padding: 50px 20px;
+   border-radius: 10px;
+   animation: aparecer 3s linear;
+   margin: 9px;
+  
+
+}
+.diferente h2 {
+     margin: 10px 0;
+    color: #f9f9fa;
+    font-size: 25px;
+
+    
+}
+
+.main_ctn a {
+    text-decoration: none;
+    color: white;
+}
+
+/*aqui são efeitos*/
+
+
+@keyframes aparecer {
+    from{
+        opacity: 0%;       /*efeito para aparecer na tela o conteudo*/
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes mov{
+    from{
+       transform: translate(-5px);
+    }
+    to{
+      
+    }
+}
+
+/*area de nav*/
+.nave  {
+    width:100%;
+    background-image: url(midias/fundo2.jpg) ;
+    padding: 70px 0 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.port {
+    text-align: center;
+    font-size: 25px;
+    color: #1e5580;
+    padding-bottom: 50px;
+
+}
+.projetinho{
+   background-color: #0f8beb;
+   width: 100%;
+   margin: 0px 53px 0px 42px ;
+   padding: 121px 20px;
+   border-radius: 10px;
+   list-style: none;
+   align-items: center;
+   text-align: center;
+   
+  
+}
+.projetinho:hover{
+    animation: mov 4s linear ;
+    cursor:pointer;
+    
+}
+.projec{
+   display: flex;
+   margin: 0;
+  
+}
+.port p {
+    color: #767677;
+    font-size: 18px;
+}
+.hist{
+    font-size:28px;
+    text-align: center;
+    color: #328cd1;
+    list-style: none;
+    padding-top:27px;
+    
+}
+/*parte do footer rodape*/
+.rodape{
+    height: 50px;
+}
+div .redes{
+    text-align: right;   
+   
+}
+div .redes a{
+    margin: 10px;
+    padding: 10px 10px;
+
+}
+.redes a :hover{
+  background-color: #0b37fdb6;
+  border-radius:9px;
+  animation: mov 5s linear infinite;
+}
+.redes p{
+    text-align: center;
+    color: #767677; 
+   
+}
+
+
+/*menu-mobile*/
+.menu-mobile{
+    text-align: right;
+    width:100%;
+    display: none;
+    text-align:right;
+    width: 100%;
+    
+    
+}
+
+@media screen and (max-width: 836px ){
+    
+    
+    .menuum{display: none;}
+    .menu-mobile{display: block;}
+}
+
+
+ ul li {
+    
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(217, 219, 226);
+    background-color: #2d9ff7;
+    padding:0px 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: #1900ff;
+    
+
+    
+    
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: #58a7e4;
+
+}
+
+
+.sow-menu{
+    opacity: 1;
+}
+.hide{
+    transition: 1s;
+    opacity: 0;
+}
+.icon-menu{
+    cursor: pointer;
+}
+/*area de linguagems*/
+.habil{
+   
+    display: flex;
+    text-align: center;
+    height:400px;
+    
+}
+.html1 img{
+    height: 
+    50%;
+
+  
+    
+}
+.js img{
+    height: 50%;
+    
+}
+.css img{
+    height:50%;
+}
+@keyframes jave {
+    from{
+       transform: rotateX(129deg)
+    }
+    to{
+       transform: rotateY(20deg)
+      }
+    
+}
+.js:hover{
+    animation: jave 3s linear ;
+}
+.html1:hover{
+    animation: jave 3s linear ;
+}
+.css:hover{
+    animation: jave 3s linear ;
+}
